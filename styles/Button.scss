@@ -1,0 +1,31 @@
+.button {
+  .round-bottom {
+    background: rgba(205, 255, 216, 1);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .round-top {
+    background: rgba(107, 229, 185, 1);
+    color: black;
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .round-top:hover {
+    background: rgb(107, 235, 185, 1);
+    cursor: pointer;
+  }
+
+  .button-text {
+    font-size: 22px;
+  }
+}
