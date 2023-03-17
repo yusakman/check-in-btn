@@ -1,9 +1,16 @@
 const Button = ({ props }) => {
-  const { open, setOpen } = props;
+  const { setOpen, account, loadAccount, balance } = props;
+
+  const handleCheckIn = async (e) => {
+    e.preventDefault();
+    await loadAccount();
+    setOpen(true);
+  };
+
   return (
     <div className="button">
       <div className="round-bottom">
-        <div className="round-top" onClick={(e) => setOpen(true)}>
+        <div className="round-top" onClick={(e) => handleCheckIn(e)}>
           <p className="button-text">Check In</p>
         </div>
       </div>
